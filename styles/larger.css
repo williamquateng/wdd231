@@ -37,14 +37,14 @@
   }
 
   #about, #photo {
-    background: #f8f7f7f6;
+    background: #f9f9f9;
     padding: 1rem;
     border-radius: 5px;
   }
 
   #courses {
     grid-column: 1 / -1; /* span full width */
-    background: #eaeeec;
+    background: #f1f1f1;
     padding: 1rem;
     border-radius: 5px;
   }
@@ -58,7 +58,7 @@
     padding: 0.5rem 1rem;
     border: none;
     background: #2a9d8f;
-    color: #eff1f0;
+    color: #fff;
     border-radius: 3px;
     cursor: pointer;
   }
@@ -89,3 +89,4 @@
     margin: 0.5rem;
   }
 }
+

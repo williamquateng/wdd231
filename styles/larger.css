@@ -38,6 +38,7 @@
 
   #about, #photo {
     background: #f9f9f9;
+    max-width: 100%;
     padding: 1rem;
     border-radius: 5px;
   }

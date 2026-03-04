@@ -15,7 +15,9 @@ const totalCredits = document.getElementById("totalCredits");
 // Render courses
 function displayCourses(courseList) {
   courseContainer.innerHTML = "";
-  let credits = 0;
+
+  // Use reduce to calculate credits dynamically
+  const credits = courseList.reduce((sum, course) => sum + course.credits, 0);
 
   courseList.forEach(course => {
     const card = document.createElement("div");
@@ -31,7 +33,6 @@ function displayCourses(courseList) {
     `;
 
     courseContainer.appendChild(card);
-    credits += course.credits;
   });
 
   totalCredits.textContent = `Total Credits: ${credits}`;

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="WDD231 Home Page">
+  <meta name="author" content="Williams Quateng">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD231 Home Page</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>WDD231</h1>
+    <button id="menuButton" aria-label="Menu">&#9776;</button>
+    <nav id="primaryNav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber/index.html">Chamber Project</a></li>
+        <li><a href="final/index.html">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>My name is Williams Quateng. I am from Ghana and live in Cape Coast.
+        Currently working as an online instructor at an online school. 
+         I am a student at BYU-Idaho studying, and I am currently pursuing Software development.</p>
+    </section>
+
+    <section id="photo">
+      <h2>Student Photo</h2>
+      <img src="images/self.png" alt="Student Photo">
+    </section>
+
+    <section id="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="filters">
+        <button id="allBtn">All</button>
+        <button id="cseBtn">CSE</button>
+        <button id="wddBtn">WDD</button>
+      </div>
+      <div id="courseContainer"></div>
+      <p id="totalCredits"></p>
+    </section>
+  </main>
+  <footer>
+    <div class="social">
+      <a href="https://github.com/yourgithubusername" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+    </div>
+    <p>&copy; <span id="currentYear"></span> • Williams Quateng • Cape Cosat, Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

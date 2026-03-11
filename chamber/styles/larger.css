@@ -32,7 +32,6 @@ footer {
   flex-wrap: wrap;
 }
 
-/* Directory */ list view */
 #directory.list {
   display: flex;
   flex-direction: column;

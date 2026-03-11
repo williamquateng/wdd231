@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Sunrise Bakery",
+    "address": "12 Market St, Accra",
+    "phone": "+233 555 111 222",
+    "website": "https://sunrisebakery.com",
+    "image": "sunrise.jpg",
+    "membershipLevel": 1,
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "GreenLeaf Farms",
+    "address": "78 Valley Rd, Kumasi",
+    "phone": "+233 555 555 666",
+    "website": "https://greenleaf.com",
+    "image": "greenleaf.jpg",
+    "membershipLevel": 2,
+    "category": "Agriculture"
+  },
+  {
+    "name": "Bright Future Academy",
+    "address": "101 Learning Ave, Cape Coast",
+    "phone": "+233 555 777 888",
+    "website": "https://brightfuture.edu",
+    "image": "brightfuture.jpg",
+    "membershipLevel": 1,
+    "category": "Education"
+  },
+  {
+    "name": "OceanView Hotel",
+    "address": "202 Beach Rd, Takoradi",
+    "phone": "+233 555 999 000",
+    "website": "https://oceanviewhotel.com",
+    "image": "oceanview.jpg",
+    "membershipLevel": 3,
+    "category": "Hospitality"
+  },
+  {
+    "name": "Accra Fitness Center",
+    "address": "303 Wellness St, Accra",
+    "phone": "+233 555 222 333",
+    "website": "https://accrafitness.com",
+    "image": "fitness.jpg",
+    "membershipLevel": 2,
+    "category": "Health & Fitness"
+  },
+  {
+    "name": "Golden Transport Ltd",
+    "address": "404 Transit Rd, Tema",
+    "phone": "+233 555 444 555",
+    "website": "https://goldentransport.com",
+    "image": "transport.jpg",
+    "membershipLevel": 1,
+    "category": "Logistics"
+  }
+]

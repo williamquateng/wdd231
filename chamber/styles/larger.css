@@ -1,0 +1,50 @@
+/* larger.css */
+
+/* Navigation becomes horizontal */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav li {
+  margin: 0;
+}
+
+/* Directory grid view */
+#directory.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/* Footer layout */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#directory.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+#directory.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+

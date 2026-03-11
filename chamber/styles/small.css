@@ -98,6 +98,7 @@ footer {
   gap: 1rem;
 }
 
+/* Directory */ list view */
 #directory.list {
   display: flex;
   flex-direction: column;

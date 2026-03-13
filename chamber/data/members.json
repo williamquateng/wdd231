@@ -4,7 +4,7 @@
     "address": "12 Market St, Accra",
     "phone": "+233 555 111 222",
     "website": "https://sunrisebakery.com",
-    "image": "sunrise.jpg",
+    "image": "images/sunrise.jpg",
     "membershipLevel": 1,
     "category": "Food & Beverage"
   },
@@ -13,7 +13,7 @@
     "address": "78 Valley Rd, Kumasi",
     "phone": "+233 555 555 666",
     "website": "https://greenleaf.com",
-    "image": "greenleaf.jpg",
+    "image": "images/greenleaf.jpg",
     "membershipLevel": 2,
     "category": "Agriculture"
   },
@@ -22,7 +22,7 @@
     "address": "101 Learning Ave, Cape Coast",
     "phone": "+233 555 777 888",
     "website": "https://brightfuture.edu",
-    "image": "brightfuture.jpg",
+    "image": "images/brightfuture.jpg",
     "membershipLevel": 1,
     "category": "Education"
   },
@@ -31,7 +31,7 @@
     "address": "202 Beach Rd, Takoradi",
     "phone": "+233 555 999 000",
     "website": "https://oceanviewhotel.com",
-    "image": "oceanview.jpg",
+    "image": "images/oceanview.jpg",
     "membershipLevel": 3,
     "category": "Hospitality"
   },
@@ -40,7 +40,7 @@
     "address": "303 Wellness St, Accra",
     "phone": "+233 555 222 333",
     "website": "https://accrafitness.com",
-    "image": "fitness.jpg",
+    "image": "images/fitness.jpg",
     "membershipLevel": 2,
     "category": "Health & Fitness"
   },
@@ -49,7 +49,7 @@
     "address": "404 Transit Rd, Tema",
     "phone": "+233 555 444 555",
     "website": "https://goldentransport.com",
-    "image": "transport.jpg",
+    "image": "images/transport.jpg",
     "membershipLevel": 1,
     "category": "Logistics"
   }

@@ -16,24 +16,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/large.css">
   <script src="scripts/directory.js" defer></script> 
 </head>
 <body>
   <header>
     <h1>Williams Quateng Chamber of Commerce</h1>
-    <nav aria-label="Main Navigation">
-      <ul>
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="logo">Chamber</div>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html" aria-current="page">Directory</a></li>
+        <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li><a href="discover.html">Discover</a></li>
       </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumbs">
+    <a href="index.html">Home</a> > 
+    <span>Directory</span>
+  </nav>
 
   <main>
     <h2>Member Directory</h2>
@@ -42,7 +53,6 @@
       <button id="listView">List View</button>
     </div>
 
-    <!-- Empty section: JS will inject businesses from members.json -->
     <section class="business-listings grid" id="directory">
       <!-- Business cards will be dynamically generated here -->
     </section>
@@ -53,6 +63,17 @@
     <p>Developed by Williams Quateng | WDD 231</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
+
+  <script>
+    // Toggle mobile menu
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
+
 

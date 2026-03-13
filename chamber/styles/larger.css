@@ -1,14 +1,42 @@
-/* larger.css */
+/* Navigation becomes horizontal on larger screens */
+nav {
+  background-color: #004080;
+  padding: 0.5rem;
+}
 
-/* Navigation becomes horizontal */
 nav ul {
-  display: flex;
+  display: flex !important; /* force visible on large screens */
   justify-content: center;
   gap: 2rem;
+  background-color: transparent;
 }
 
 nav li {
   margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  background-color: #0066cc;
+  border-radius: 4px;
+}
+
+/* Active link styling */
+nav a.active,
+nav a[aria-current="page"] {
+  border-bottom: 2px solid yellow;
+  font-weight: bold;
+}
+
+/* Hide hamburger on larger screens */
+.hamburger {
+  display: none;
 }
 
 /* Directory grid view */
@@ -19,7 +47,7 @@ nav li {
   padding: 1rem;
 }
 
-/* Directory list view (no change from small.css, so you can omit unless you want overrides) */
+/* Directory list view */
 #directory.list {
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-/* small.css - base styles for 320px and up */
+/* small.css - base styles for mobile-first design */
 body {
   background-color: #fdfdfd;
   color: #333;
@@ -14,6 +14,10 @@ header {
 
 header h1 {
   font-size: 1.5rem;
+}
+
+nav {
+  background-color: #004080;
 }
 
 nav ul {
@@ -40,7 +44,6 @@ nav a:hover {
   border-radius: 4px;
 }
 
-/* Active link styling */
 nav a.active,
 nav a[aria-current="page"] {
   background-color: #0066cc;
@@ -136,19 +139,16 @@ footer {
   gap: 1rem;
 }
 
-/* Directory list view */
 #directory.list {
   display: flex;
   flex-direction: column;
 }
 
-/* Smooth transition between views */
 #directory {
   transition: all 0.3s ease-in-out;
 }
 
-/* Active button styling */
 .view-toggle button.active {
   background-color: #0066cc;
-  font-weight: bold;
 }
+

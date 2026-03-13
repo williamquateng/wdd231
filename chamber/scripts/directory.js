@@ -42,13 +42,34 @@ async function loadMembers() {
 // Call the function when the page loads
 document.addEventListener('DOMContentLoaded', loadMembers);
 
-// Toggle between grid and list views
-document.getElementById('gridView').addEventListener('click', () => {
-  document.getElementById('directory').classList.add('grid');
-  document.getElementById('directory').classList.remove('list');
+// Toggle between grid and list views with active state + accessibility
+const gridBtn = document.getElementById('gridView');
+const listBtn = document.getElementById('listView');
+const directory = document.getElementById('directory');
+
+gridBtn.addEventListener('click', () => {
+  directory.classList.add('grid');
+  directory.classList.remove('list');
+  gridBtn.classList.add('active');
+  listBtn.classList.remove('active');
+  gridBtn.setAttribute('aria-pressed', 'true');
+  listBtn.setAttribute('aria-pressed', 'false');
 });
 
-document.getElementById('listView').addEventListener('click', () => {
-  document.getElementById('directory').classList.add('list');
-  document.getElementById('directory').classList.remove('grid');
+listBtn.addEventListener('click', () => {
+  directory.classList.add('list');
+  directory.classList.remove('grid');
+  listBtn.classList.add('active');
+  gridBtn.classList.remove('active');
+  listBtn.setAttribute('aria-pressed', 'true');
+  gridBtn.setAttribute('aria-pressed', 'false');
 });
+
+// Default view on page load
+document.addEventListener('DOMContentLoaded', () => {
+  directory.classList.add('grid');
+  gridBtn.classList.add('active');
+  gridBtn.setAttribute('aria-pressed', 'true');
+  listBtn.setAttribute('aria-pressed', 'false');
+});
+

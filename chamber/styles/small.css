@@ -141,3 +141,14 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+/* Smooth transition between views */
+#directory {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Active button styling */
+.view-toggle button.active {
+  background-color: #0066cc;
+  font-weight: bold;
+}

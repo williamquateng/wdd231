@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chamber of Commerce | Home Page</title>
 
-  <meta property="og:title" content="Williams Quateng Chamber of Commerce Business Directory">
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Chamber of Commerce | Home Page">
   <meta property="og:description" content="Discover local businesses in the Williams Quateng Chamber directory with contact details and services.">
   <meta property="og:url" content="https://williamsquateng.github.io/chamber/index.html">
-  <meta property="og:image" content="https://williamsquateng.github.io/chamber/images/index.png">
+  <meta property="og:image" content="https://williamsquateng.github.io/chamber/index.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+
   <meta name="description" content="Business directory for the Williams Quateng Chamber of Commerce.">
   <meta name="author" content="Williams Quateng">
 
@@ -22,13 +24,14 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/directory.js" defer></script>
-
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
 </head>
 <body>
   <!-- Header -->
   <header>
-    <h1>Chamber of Commerce</h1>
+    <p class="site-title">Chamber of Commerce</p>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -38,54 +41,46 @@
       </ul>
     </nav>
   </header>
-<main>
-  <h1>Welcome to the Williams Quateng Chamber of Commerce | Home Page</h1>
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="images/hero.png" alt="Community Chamber Hero Image">
-    <div class="hero-text">
-      <h2>Connecting Businesses, Building Community</h2>
-    </div>
-  </section>
 
-  <!-- Call to Action -->
-  <section class="cta">
-    <a href="join.html" class="button">Join the Chamber Today</a>
-  </section>
+  <!-- Main Content -->
+  <main>
+    <!-- Single H1 inside main -->
+    <h1>Chamber of Commerce | Home Page</h1>
 
-  <!-- Current Events -->
-  <section class="events">
-    <h2>Upcoming Events</h2>
-    <ul>
-      <li>Business Networking Night – March 25</li>
-      <li>Community Clean-Up – April 2</li>
-      <li>Annual Gala – April 15</li>
-    </ul>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/hero.png" alt="Community Chamber Hero Image">
+      <div class="hero-text">
+        <h2>Connecting Businesses, Building Community</h2>
+      </div>
+    </section>
 
-  <!-- Weather Section -->
-  <section class="weather">
-    <h2>Local Weather</h2>
-    <p>Sunny, 28°C</p>
-    <!-- Later you can replace this with a weather API script -->
-  </section>
+    <!-- Call to Action -->
+    <section class="cta">
+      <a href="join.html" class="button">Join the Chamber Today</a>
+    </section>
 
-  <!-- Company Spotlights -->
-  <section class="spotlights">
-    <h2>Member Spotlights</h2>
-    <div class="company">
-      <h3>ABC Consulting</h3>
-      <p>Helping businesses grow with expert advice.</p>
-    </div>
-    <div class="company">
-      <h3>GreenTech Solutions</h3>
-      <p>Innovative eco-friendly technology for the future.</p>
-    </div>
-    <div class="company">
-      <h3>Fresh Foods Market</h3>
-      <p>Providing healthy, local produce to our community.</p>
-    </div>
-  </section>
+    <!-- Current Events -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Business Networking Night - March 25</li>
+        <li>Community Clean-Up - April 2</li>
+        <li>Annual Gala - April 15</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Local Weather</h2>
+      <!-- Weather API will inject content here -->
+    </section>
+
+    <!-- Company Spotlights -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <!-- Spotlight script will inject content here -->
+    </section>
   </main>
 
   <!-- Footer -->
@@ -94,3 +89,4 @@
   </footer>
 </body>
 </html>
+

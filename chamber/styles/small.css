@@ -1,10 +1,8 @@
 /* small.css - base styles for mobile-first design */
 body {
-  background-color: #fdfdfd;
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0 1rem;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+
 
 header {
   background-color: #004080;
@@ -21,16 +19,16 @@ nav {
 }
 
 nav ul {
-  list-style: none;
-  display: none; /* hidden by default on small screens */
-  flex-direction: column;
-  gap: 0.5rem;
-  background-color: #004080;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+nav ul.open {
+  max-height: 500px; /* enough to show all links */
+  opacity: 1;
 }
 
-nav ul.open {
-  display: flex; /* show when hamburger is clicked */
-}
 
 nav a {
   color: #fff;
@@ -57,6 +55,12 @@ nav a[aria-current="page"] {
   cursor: pointer;
   gap: 4px;
 }
+
+.hamburger:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 4px;
+}
+
 
 .hamburger span {
   height: 3px;
@@ -94,6 +98,12 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
+}
+
+
 button:hover {
   background-color: #0066cc;
 }
@@ -109,6 +119,11 @@ button:hover {
   padding: 1rem;
   background-color: #fff;
 }
+
+.card p {
+  line-height: 1.5;
+}
+
 
 .card img {
   max-width: 100%;
@@ -134,10 +149,9 @@ footer {
 }
 
 #directory.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr;
 }
+
 
 #directory.list {
   display: flex;

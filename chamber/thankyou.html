@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce | Thank You</title>
+
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="Chamber of Commerce | Thank You">
+  <meta property="og:description" content="Confirmation of your Chamber membership application.">
+  <meta property="og:url" content="https://williamsquateng.github.io/chamber/thankyou.html">
+  <meta property="og:image" content="https://williamsquateng.github.io/chamber/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="description" content="Thank you page for Chamber of Commerce membership application.">
+  <meta name="author" content="Williams Quateng">
+  <link rel="canonical" href="https://williamsquateng.github.io/chamber/thankyou.html">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <p class="site-title">Chamber of Commerce</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Thank You for Joining!</h1>
+    <p>We appreciate your application. Here’s the information you submitted:</p>
+
+    <section id="submission" class="confirmation"></section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Williams Quateng Chamber of Commerce</p>
+  </footer>
+  <script>
+    // Parse query string values
+    const params = new URLSearchParams(window.location.search);
+    const fields = [
+      {key: 'fname', label: 'First Name'},
+      {key: 'lname', label: 'Last Name'},
+      {key: 'email', label: 'Email Address'},
+      {key: 'mobile', label: 'Mobile Number'},
+      {key: 'organization', label: 'Organization Name'},
+      {key: 'timestamp', label: 'Form Submitted At'}
+    ];
+
+    const section = document.getElementById('submission');
+    const list = document.createElement('ul');
+
+    fields.forEach(f => {
+      const value = params.get(f.key);
+      if (value) {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${f.label}:</strong> ${value}`;
+        list.appendChild(li);
+      }
+    });
+
+    section.appendChild(list);
+  </script>
+</body>
+</html>

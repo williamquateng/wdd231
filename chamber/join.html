@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce | Join</title>
+
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="Chamber of Commerce | Directly">
+  <meta property="og:description" content="Apply for membership in the Williams Quateng Chamber of Commerce.">
+  <meta property="og:url" content="https://williamsquateng.github.io/chamber/join.html">
+  <meta property="og:image" content="image/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="description" content="Membership application form for the Williams Quateng Chamber of Commerce.">
+  <meta name="author" content="Williams Quateng">
+  <link rel="canonical" href="https://williamsquateng.github.io/chamber/join.html">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <p class="site-title">Chamber of Commerce</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Join the Chamber</h1>
+    <form method="get" action="thankyou.html">
+      <label>
+        First Name:
+        <input type="text" name="fname" title="Applicant First Name" autocomplete="given-name" required>
+      </label>
+
+      <label>
+        Last Name:
+        <input type="text" name="lname" title="Applicant Last Name" autocomplete="family-name" required>
+      </label>
+
+      <label>
+        Organizational Title:
+        <input type="text" name="orgtitle" title="Organizational Title" autocomplete="organization-title"
+               pattern="[A-Za-z\\- ]{7,}">
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" title="Email Address" autocomplete="email" required
+               placeholder="example@domain.com">
+      </label>
+
+      <label>
+        Mobile Phone:
+        <input type="tel" name="mobile" title="Mobile Phone Number" autocomplete="tel" required>
+      </label>
+
+      <label>
+        Organization Name:
+        <input type="text" name="organization" title="Business/Organization Name" autocomplete="organization" required>
+      </label>
+
+      <label>
+        Membership Level:
+        <select name="membership" required>
+          <option value="np">NP Membership (Non‑Profit)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label>
+        Organization Description:
+        <textarea name="description" title="Business/Organization Description"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Submit Application">
+    </form>
+
+    <!-- Membership Cards (with animation + modal triggers) -->
+    <section class="membership-cards">
+      <div class="card np">NP Membership <a href="#npModal">Learn More</a></div>
+      <div class="card bronze">Bronze Membership <a href="#bronzeModal">Learn More</a></div>
+      <div class="card silver">Silver Membership <a href="#silverModal">Learn More</a></div>
+      <div class="card gold">Gold Membership <a href="#goldModal">Learn More</a></div>
+    </section>
+
+    <!-- Example Modal -->
+    <div id="npModal" class="modal">
+      <div class="modal-content">
+        <h2>NP Membership Benefits</h2>
+        <p>No fee, access to events, networking opportunities.</p>
+        <button class="close">Close</button>
+      </div>
+    </div>
+    <!-- Repeat for Bronze, Silver, Gold -->
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Williams Quateng Chamber of Commerce</p>
+  </footer>
+</body>
+</html>

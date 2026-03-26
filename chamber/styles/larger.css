@@ -91,7 +91,18 @@
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease forwards;
   }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
   .card p {
   line-height: 1.5;
@@ -120,5 +131,54 @@
     padding: 1rem;
     background-color: #004080;
     color: #fff;
+  }
+}
+
+/* Confirmation section styling */
+.confirmation {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.confirmation h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.confirmation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.confirmation li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  color: #444;
+}
+
+.confirmation li strong {
+  color: #000;
+  font-weight: 700;
+}
+
+/* Optional: subtle animation on load */
+.confirmation {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

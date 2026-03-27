@@ -10,7 +10,7 @@
   <meta property="og:title" content="Chamber of Commerce | Directly">
   <meta property="og:description" content="Apply for membership in the Williams Quateng Chamber of Commerce.">
   <meta property="og:url" content="https://williamsquateng.github.io/chamber/join.html">
-  <meta property="og:image" content="image/og-image.png">
+  <meta property="og:image" content="https://williamsquateng.github.io/chamber/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -81,12 +81,14 @@
       <label>
         Membership Level:
         <select name="membership" required>
-          <option value="np">NP Membership (Non‑Profit)</option>
-          <option value="bronze">Bronze Membership</option>
-          <option value="silver">Silver Membership</option>
-          <option value="gold">Gold Membership</option>
-        </select>
+        <option value="" disabled selected>Select a membership level</option>
+        <option value="np">NP Membership (Non‑Profit)</option>
+        <option value="bronze">Bronze Membership</option>
+        <option value="silver">Silver Membership</option>
+        <option value="gold">Gold Membership</option>
+      </select>
       </label>
+
 
       <label>
         Organization Description:
@@ -100,6 +102,7 @@
 
     <!-- Membership Cards (with animation + modal triggers) -->
     <section class="membership-cards">
+      <h2>Membership Options</h2>
       <div class="card np">NP Membership <a href="#npModal">Learn More</a></div>
       <div class="card bronze">Bronze Membership <a href="#bronzeModal">Learn More</a></div>
       <div class="card silver">Silver Membership <a href="#silverModal">Learn More</a></div>

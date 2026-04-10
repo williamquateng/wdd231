@@ -1,3 +1,22 @@
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Consistent spacing */
+section {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+}
+
+/* Responsive grid */
+.membership-form {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+}
+
 @media (max-width: 768px) {
   .navbar {
     display: flex;

@@ -18,7 +18,7 @@ h1, h2 {
   color: #004080;
 }
 
-
+/* Card styling */
 .card {
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -45,6 +45,7 @@ h1, h2 {
   text-decoration: underline;
 }
 
+/* Hero section */
 .hero {
   position: relative;
   text-align: center;
@@ -52,7 +53,7 @@ h1, h2 {
 }
 
 .hero img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -67,16 +68,21 @@ h1, h2 {
   border-radius: 8px;
 }
 
+/* Membership form with Grid */
 .membership-form {
   margin-top: 2rem;
   padding: 1.5rem;
   background: #f0f8ff;
   border-radius: 8px;
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .membership-form form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
 }
 
@@ -85,32 +91,46 @@ h1, h2 {
 }
 
 .membership-form input,
-.membership-form select {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
+.membership-form select,
 .membership-form button {
-  background: #027df8;
-  color: white;
+  width: 100%;
   padding: 0.75rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-.membership-form button:hover {
+/* Buttons */
+.membership-form button,
+#openModal,
+#closeModal {
+  background: #004080;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.membership-form button:hover,
+#openModal:hover,
+#closeModal:hover {
   background: #0066cc;
 }
 
+/* Navbar responsive */
 @media (min-width: 769px) {
   .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
   }
 }
 
+/* Clear data button */
 #clearData {
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
@@ -125,6 +145,7 @@ h1, h2 {
   background: #990000;
 }
 
+/* Modal dialog */
 dialog {
   border: none;
   border-radius: 8px;
@@ -138,30 +159,24 @@ dialog::backdrop {
   background: rgba(0,0,0,0.5);
 }
 
-#openModal {
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background: #004080;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .membership-form {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
-#openModal:hover {
-  background: #a0c7ee;
-}
-
-#closeModal {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #cc0000;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-#closeModal:hover {
-  background: #990000;
-}

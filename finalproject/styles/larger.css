@@ -1,0 +1,54 @@
+@media (min-width: 769px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    display: none; /* hide hamburger on large screens */
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  .card {
+    margin: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #e6f2ff;
+  margin: 0;
+}

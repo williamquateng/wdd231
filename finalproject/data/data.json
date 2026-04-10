@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "title": "HTML Basics",
+    "category": "Web Development",
+    "description": "Learn the structure of web pages using semantic HTML elements.",
+    "link": "tutorials/html-basics.html"
+  },
+  {
+    "id": 2,
+    "title": "CSS Fundamentals",
+    "category": "Web Design",
+    "description": "Understand how to style web pages with colors, layouts, and typography.",
+    "link": "tutorials/css-fundamentals.html"
+  },
+  {
+    "id": 3,
+    "title": "JavaScript Essentials",
+    "category": "Programming",
+    "description": "Get started with variables, functions, and DOM manipulation.",
+    "link": "tutorials/js-essentials.html"
+  },
+  {
+    "id": 4,
+    "title": "Responsive Design",
+    "category": "Web Design",
+    "description": "Build layouts that adapt to mobile, tablet, and desktop screens.",
+    "link": "tutorials/responsive-design.html"
+  },
+  {
+    "id": 5,
+    "title": "Git & GitHub",
+    "category": "Version Control",
+    "description": "Learn how to track changes and collaborate on projects using GitHub.",
+    "link": "resources/git-github.html"
+  },
+  {
+    "id": 6,
+    "title": "Python for Beginners",
+    "category": "Programming",
+    "description": "Introduction to Python syntax, loops, and data structures.",
+    "link": "tutorials/python-beginners.html"
+  },
+  {
+    "id": 7,
+    "title": "Database Basics",
+    "category": "Data Management",
+    "description": "Understand relational databases, tables, and SQL queries.",
+    "link": "tutorials/database-basics.html"
+  },
+  {
+    "id": 8,
+    "title": "Cybersecurity Awareness",
+    "category": "Security",
+    "description": "Learn best practices for keeping your accounts and data safe online.",
+    "link": "resources/cybersecurity.html"
+  },
+  {
+    "id": 9,
+    "title": "Agona Tech Projects",
+    "category": "Community",
+    "description": "Showcase of collaborative projects built by local members.",
+    "link": "projects/community.html"
+  },
+  {
+    "id": 10,
+    "title": "Building a Portfolio",
+    "category": "Career",
+    "description": "Tips on creating a professional web development portfolio.",
+    "link": "resources/portfolio.html"
+  },
+  {
+    "id": 11,
+    "title": "Intro to APIs",
+    "category": "Programming",
+    "description": "Learn how to fetch and use data from public APIs.",
+    "link": "tutorials/apis.html"
+  },
+  {
+    "id": 12,
+    "title": "Accessibility in Web Design",
+    "category": "Web Design",
+    "description": "Ensure your websites are usable by people of all abilities.",
+    "link": "tutorials/accessibility.html"
+  },
+  {
+    "id": 13,
+    "title": "Agona Tech Hub Membership",
+    "category": "Community",
+    "description": "Join the hub to access exclusive resources and collaborate.",
+    "link": "membership/form.html"
+  },
+  {
+    "id": 14,
+    "title": "Cloud Computing Basics",
+    "category": "Technology",
+    "description": "Introduction to cloud services and how they support modern apps.",
+    "link": "resources/cloud.html"
+  },
+  {
+    "id": 15,
+    "title": "Career Paths in Tech",
+    "category": "Career",
+    "description": "Explore different roles in technology and how to prepare for them.",
+    "link": "resources/career-paths.html"
+  }
+]

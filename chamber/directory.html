@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Williams Quateng Chamber of Commerce Business Directory">
+  <meta property="og:description" content="Discover local businesses in the Williams Quateng Chamber directory with contact details and services.">
+  <meta property="og:url" content="https://williamsquateng.github.io/chamber/directory.html">
+  <meta property="og:image" content="images/og-image.jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <title>Williams Quateng Chamber of Commerce Directory</title>
+  <meta name="description" content="Business directory for the Williams Quateng Chamber of Commerce.">
+  <meta name="author" content="Williams Quateng">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script> 
+</head>
+<body>
+  <header>
+    <h1>Williams Quateng Chamber of Commerce</h1>
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="logo">Chamber</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+      <div class="hamburger" role="button" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="index.html">Home</a>
+    <span aria-hidden="true"> &gt; </span>
+    <span>Directory</span>
+  </nav>
+
+  <main>
+    <h2>Member Directory</h2>
+    <div class="view-toggle">
+      <button id="gridView">Grid View</button>
+      <button id="listView">List View</button>
+    </div>
+
+    <!-- Empty container: cards will be generated from members.json -->
+    <section class="business-listings grid" id="directory"></section>
+  </main>
+
+  <footer>
+    <p>Contact: williamsquateng@gmail.com | Phone: (+233) 549731006</p>
+    <p>Developed by Williams Quateng | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
+

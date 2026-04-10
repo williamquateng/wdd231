@@ -1,0 +1,168 @@
+/* small.css - base styles for mobile-first design */
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: #004080;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: #004080;
+}
+
+nav ul {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+nav ul.open {
+  max-height: 500px; /* enough to show all links */
+  opacity: 1;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #0066cc;
+  border-radius: 4px;
+}
+
+nav a.active,
+nav a[aria-current="page"] {
+  background-color: #0066cc;
+  text-decoration: underline;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 4px;
+}
+
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+main h2 {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+
+.view-toggle {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  background-color: #004080;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
+}
+
+
+button:hover {
+  background-color: #0066cc;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.card p {
+  line-height: 1.5;
+}
+
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: #b00020; /* accessible red */
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #ffe5e5;
+  border: 1px solid #b00020;
+  border-radius: 4px;
+}
+
+#directory.grid {
+  grid-template-columns: 1fr;
+}
+
+
+#directory.list {
+  display: flex;
+  flex-direction: column;
+}
+
+#directory {
+  transition: all 0.3s ease-in-out;
+}
+
+.view-toggle button.active {
+  background-color: #0066cc;
+}
+

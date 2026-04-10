@@ -1,0 +1,234 @@
+/* larger.css - overrides for wider screens */
+@media (min-width: 768px) {
+  nav {
+    background-color: #004080;
+    padding: 0.5rem;
+  }
+
+  hero-text h2 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: flex !important; /* force visible on large screens */
+    justify-content: center;
+    gap: 2rem;
+    background-color: transparent;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #0066cc;
+    border-radius: 4px;
+  }
+
+  nav a.active,
+  nav a[aria-current="page"] {
+    border-bottom: 2px solid yellow;
+    font-weight: bold;
+  }
+
+  .hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.hero-text .button {
+  background-color: #004080;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+
+  nav a:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
+}
+
+  .hamburger {
+    display: none; /* hide hamburger on larger screens */
+  }
+
+  #directory.grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+     align-items: start;
+  }
+
+  #directory.list {
+    gap: 1rem;
+  }
+
+  .card {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease forwards;
+  }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+  .card p {
+  line-height: 1.5;
+}
+
+
+  .card:hover {
+    transform: translateY(-4px);
+  }
+
+  .card img {
+    margin-bottom: 1rem;
+  }
+
+  footer p {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: #004080;
+    color: #fff;
+  }
+}
+
+/* Confirmation section styling */
+.confirmation {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.confirmation h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.confirmation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.confirmation li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  color: #444;
+}
+
+.confirmation li strong {
+  color: #000;
+  font-weight: 700;
+}
+
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#discover-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  #discover-grid {
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8";
+  }
+}
+
+@media (min-width: 641px) {
+  .card img:hover {
+    filter: brightness(80%);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  #discover-grid {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+}
+
+@media (min-width: 1025px) {
+  #discover-grid {
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+  }
+}
+
+.card:nth-child(1) { grid-area: card1; }
+.card:nth-child(2) { grid-area: card2; }
+.card:nth-child(3) { grid-area: card3; }
+.card:nth-child(4) { grid-area: card4; }
+.card:nth-child(5) { grid-area: card5; }
+.card:nth-child(6) { grid-area: card6; }
+.card:nth-child(7) { grid-area: card7; }
+.card:nth-child(8) { grid-area: card8; }
+/* Continue for all 8 cards */

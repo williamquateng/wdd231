@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #004080;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  main {
+    display: block;
+    padding: 1rem;
+  }
+
+  .card {
+    margin: 1rem 0;
+  }
+
+  footer {
+    text-align: center;
+  }
+}

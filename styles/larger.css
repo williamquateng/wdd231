@@ -1,0 +1,93 @@
+@media (min-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+
+  #menuButton {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    color: #e9c46a;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #fff;
+  }
+
+  /* Side-by-side About Me and Photo */
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  #about, #photo {
+    background: #f9f9f9;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  #courses {
+    grid-column: 1 / -1; /* span full width */
+    background: #f1f1f1;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .filters {
+    margin-bottom: 1rem;
+  }
+
+  .filters button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #2a9d8f;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .filters button:hover {
+    background: #264653;
+  }
+
+  .course-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+
+  .course-card.completed {
+    background: #2a9d8f;
+    color: #fff;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer p {
+    margin: 0.5rem;
+  }
+}
+

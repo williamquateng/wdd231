@@ -68,7 +68,7 @@ h1, h2 {
   border-radius: 8px;
 }
 
-/* Membership form with Grid */
+/* Membership form (merged into one block) */
 .membership-form {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -179,4 +179,5 @@ dialog::backdrop {
     gap: 1rem;
   }
 }
+
 

@@ -38,8 +38,13 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .hero img {
+    border-radius: 8px; /* optional for rounded corners */
+  }
 }
 
+/* Logo and tagline styles (these are unique, safe to keep) */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -51,15 +56,4 @@
   font-style: italic;
   color: #e6f2ff;
   margin: 0;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px; /* optional for rounded corners */
 }

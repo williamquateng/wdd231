@@ -10,13 +10,12 @@ section {
   max-width: 1200px;
 }
 
-/* Responsive grid */
+/* Responsive grid override */
 .membership-form {
   width: 100%;
-  display: grid;
-  gap: 1rem;
 }
 
+/* Mobile-specific styles */
 @media (max-width: 768px) {
   .navbar {
     display: flex;
@@ -61,3 +60,4 @@ section {
     text-align: center;
   }
 }
+

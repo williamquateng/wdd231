@@ -52,3 +52,14 @@
   color: #e6f2ff;
   margin: 0;
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* optional for rounded corners */
+}

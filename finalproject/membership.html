@@ -2,14 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Membership form for Agona Tech Hub">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join Agona Tech Hub to access exclusive resources, collaborate on projects, and grow your tech career.">
   <meta name="author" content="Williams Quateng">
-  <meta property="og:title" content="Agona Tech Hub Membership">
-  <meta property="og:description" content="Join Agona Tech Hub and connect with technology enthusiasts.">
+
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Agona Tech Hub - Membership">
+  <meta property="og:description" content="Become a member of Agona Tech Hub and collaborate on projects, tutorials, and community initiatives.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourgithub.io/finalproject/membership.html">
-  <meta property="og:image" content="favicon.png">
+  <meta property="og:url" content="https://williamquateng.github.io/finalproject/membership.html">
+  <meta property="og:image" content="https://williamquateng.github.io/finalproject/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
   <title>Membership | Agona Tech Hub</title>
+
+  <!-- Preconnects for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Load chosen font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="styles/normal.css">
   <link rel="stylesheet" href="styles/small.css">
@@ -19,10 +32,7 @@
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">
-        Agona Tech Hub
-        <p class="tagline">Empowering Agona through technology and community.</p>
-      </div>
+      <div class="logo">Agona Tech Hub</div>
       <button class="hamburger" aria-label="Menu" aria-expanded="false">&#9776;</button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -33,31 +43,35 @@
     </nav>
   </header>
 
+  <!-- Hero banner section -->
+  <section class="hero">
+    <img src="images/og-image.png" alt="Agona Tech Hub banner showing digital inclusion training">
+    <div class="hero-text">
+      <h1>Membership</h1>
+      <p>Join our community and grow with technology</p>
+    </div>
+  </section>
+
   <main>
-    <h1>Join Agona Tech Hub</h1>
-    <p>Fill out the form below to become a member of our community and gain access to tutorials, projects, and collaboration opportunities.</p>
+    <h2>Why Become a Member?</h2>
+    <p>
+      Membership at Agona Tech Hub gives you access to exclusive tutorials, collaborative projects, and networking opportunities with fellow technology enthusiasts. 
+      You’ll be part of a supportive community that values learning, innovation, and teamwork.
+    </p>
 
-    <form action="form-action.html" method="get">
-      <label for="name">Full Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+    <h2>Membership Benefits</h2>
+    <ul>
+      <li>Access to premium tutorials and resources.</li>
+      <li>Opportunities to collaborate on real-world projects.</li>
+      <li>Networking with students, developers, and innovators.</li>
+      <li>Participation in workshops and community events.</li>
+    </ul>
 
-      <label for="email">Email Address:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-
-      <label for="interest">Area of Interest:</label><br>
-      <select id="interest" name="interest" required>
-        <option value="">--Select--</option>
-        <option value="web">Web Development</option>
-        <option value="data">Data Science</option>
-        <option value="security">Cybersecurity</option>
-        <option value="community">Community Projects</option>
-      </select><br><br>
-
-      <label for="message">Why do you want to join?</label><br>
-      <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
-
-      <button type="submit">Submit</button>
-    </form>
+    <h2>How to Join</h2>
+    <p>
+      Simply sign up through our membership form and start exploring the resources available. 
+      Whether you’re a beginner or an experienced developer, Agona Tech Hub welcomes you to learn, share, and grow.
+    </p>
   </main>
 
   <footer>
@@ -67,3 +81,4 @@
   </footer>
 </body>
 </html>
+

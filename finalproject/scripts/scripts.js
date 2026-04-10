@@ -42,4 +42,20 @@ async function loadData() {
 // Run when page loads
 document.addEventListener("DOMContentLoaded", loadData);
 
+// Modal functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("benefitsModal");
+  const openBtn = document.getElementById("openModal");
+  const closeBtn = document.getElementById("closeModal");
+
+  openBtn.addEventListener("click", () => {
+    modal.showModal(); // open modal
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.close(); // close modal
+  });
+});
+
+
 

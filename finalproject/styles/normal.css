@@ -8,7 +8,7 @@ body {
 }
 
 header, footer {
-  background: #004080;
+  background: #aad0f7;
   color: #fff;
   padding: 1rem;
 }
@@ -67,5 +67,101 @@ h1, h2 {
   border-radius: 8px;
 }
 
+.membership-form {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f0f8ff;
+  border-radius: 8px;
+}
 
+.membership-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
+.membership-form label {
+  font-weight: bold;
+}
+
+.membership-form input,
+.membership-form select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.membership-form button {
+  background: #027df8;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.membership-form button:hover {
+  background: #0066cc;
+}
+
+@media (min-width: 769px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#clearData {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #cc0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#clearData:hover {
+  background: #990000;
+}
+
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+dialog::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+#openModal {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#openModal:hover {
+  background: #a0c7ee;
+}
+
+#closeModal {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #cc0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#closeModal:hover {
+  background: #990000;
+}

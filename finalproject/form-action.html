@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Confirmation</title>
+  <link rel="stylesheet" href="styles/normal.css">
+</head>
+<body>
+  <header>
+    <h1>Membership Confirmation</h1>
+  </header>
+
+  <main>
+    <div id="output"></div>
+    <!-- Clear button -->
+    <button id="clearData">Clear Membership Data</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Williams Quateng</p>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const output = document.getElementById("output");
+
+    if (params.has("name") && params.has("email") && params.has("interest")) {
+      const name = params.get("name");
+      const email = params.get("email");
+      const interest = params.get("interest");
+
+      // Display submitted values
+      output.innerHTML = `
+        <h2>Thank you for joining!</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Interest Area:</strong> ${interest}</p>
+      `;
+
+      // Save values to Local Storage
+      localStorage.setItem("memberName", name);
+      localStorage.setItem("memberEmail", email);
+      localStorage.setItem("memberInterest", interest);
+    }
+
+    // Show saved data if available
+    const savedName = localStorage.getItem("memberName");
+    const savedEmail = localStorage.getItem("memberEmail");
+    const savedInterest = localStorage.getItem("memberInterest");
+
+    if (savedName && savedEmail && savedInterest) {
+      output.innerHTML += `
+        <h3>Saved Membership Info</h3>
+        <p><strong>Name:</strong> ${savedName}</p>
+        <p><strong>Email:</strong> ${savedEmail}</p>
+        <p><strong>Interest Area:</strong> ${savedInterest}</p>
+      `;
+    }
+
+    // ✅ Clear Local Storage when button is clicked
+    document.getElementById("clearData").addEventListener("click", () => {
+      localStorage.removeItem("memberName");
+      localStorage.removeItem("memberEmail");
+      localStorage.removeItem("memberInterest");
+      output.innerHTML = "<p>Membership data cleared.</p>";
+    });
+  </script>
+</body>
+</html>
+

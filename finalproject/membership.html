@@ -17,17 +17,15 @@
 
   <title>Membership | Agona Tech Hub</title>
 
-  <!-- Preconnects for Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Load chosen font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="styles/normal.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <script type="module" src="scripts/scripts.js" defer></script>
 </head>
 <body>
   <header>
@@ -43,7 +41,7 @@
     </nav>
   </header>
 
-  <!-- Hero banner section -->
+  <!-- Hero banner -->
   <section class="hero">
     <img src="images/og-image.png" alt="Agona Tech Hub banner showing digital inclusion training">
     <div class="hero-text">
@@ -72,6 +70,45 @@
       Simply sign up through our membership form and start exploring the resources available. 
       Whether you’re a beginner or an experienced developer, Agona Tech Hub welcomes you to learn, share, and grow.
     </p>
+
+    <!-- Membership form -->
+    <section class="membership-form">
+      <h2>Sign Up</h2>
+      <form action="form-action.html" method="get">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="interest">Area of Interest:</label>
+        <select id="interest" name="interest" required>
+          <option value="">--Select--</option>
+          <option value="web">Web Development</option>
+          <option value="programming">Programming</option>
+          <option value="design">Design</option>
+          <option value="data">Data Science</option>
+        </select>
+
+        <button type="submit">Join Now</button>
+      </form>
+    </section>
+
+    <!-- Trigger button -->
+    <button id="openModal">Learn More About Benefits</button>
+
+    <!-- Modal dialog -->
+    <dialog id="benefitsModal">
+      <h2>Membership Benefits</h2>
+      <p>As a member of Agona Tech Hub, you’ll gain access to exclusive tutorials, collaborative projects, and networking opportunities.</p>
+      <ul>
+        <li>Premium tutorials and resources</li>
+        <li>Collaboration on real-world projects</li>
+        <li>Networking with developers and innovators</li>
+        <li>Participation in workshops and events</li>
+      </ul>
+      <button id="closeModal">Close</button>
+    </dialog>
   </main>
 
   <footer>
@@ -81,4 +118,5 @@
   </footer>
 </body>
 </html>
+
 
